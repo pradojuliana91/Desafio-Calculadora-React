@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Calculadora Simples
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de **calculadora simples** desenvolvido em **React** com estilização utilizando **Styled Components**. A calculadora permite a realização de operações matemáticas básicas, como soma, subtração, multiplicação e divisão.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- **Adicionar números**: Permite a inserção de números no visor da calculadora.
+- **Operações básicas**: Suporta as operações de soma (`+`), subtração (`-`), multiplicação (`*`) e divisão (`/`).
+- **Cálculo do resultado**: A função de igualdade (`=`) calcula o resultado da operação.
+- **Limpar dados**: O botão `C` limpa o visor e reseta a calculadora.
+- **Ponto decimal**: Suporte para números decimais.
+  
+## Tecnologias utilizadas
 
-### `npm start`
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Styled Components**: Biblioteca para estilização de componentes no React utilizando CSS-in-JS.
+  
+## Estrutura do Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O projeto segue uma estrutura simples, dividida em componentes:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+.
+├── src
+│   ├── components
+│   │   ├── Buttons.js
+│   │   ├── Input.js
+│   ├── styles.js
+│   ├── App.js
+│   ├── global.js
+│   ├── index.js
+│   ├── styles.js
+├── README.md
+├── package.json
+```
 
-### `npm test`
+### Componentes principais:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **`App.js`**: Componente principal que gerencia a lógica da calculadora, incluindo as operações e o estado da aplicação.
+- **`Input.js`**: Componente responsável por exibir o valor atual no visor da calculadora.
+- **`Buttons.js`**: Componente para renderizar cada botão da calculadora.
+- **`styles.js`**: Arquivo que define os estilos personalizados utilizando **Styled Components**.
 
-### `npm run build`
+## Como rodar o projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pré-requisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js** (versão 14 ou superior)
+- **npm** ou **yarn**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Passos para rodar o projeto
 
-### `npm run eject`
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/pradojuliana91/Desafio-Calculadora-React.git
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Acesse a pasta do projeto:
+   ```bash
+   cd Desafio-Calculadora-React
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Instale as dependências:
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Rode o projeto:
+   ```bash
+   npm start
+   # ou
+   yarn start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. Acesse a aplicação no navegador:
+   ```bash
+   http://localhost:3000
+   ```
 
-## Learn More
+## Exemplos de uso
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A calculadora pode ser usada para realizar operações simples como `5 + 3`, `9 - 4`, `8 * 2`, ou `6 / 3`. Insira os números e as operações e, em seguida, clique no botão `=` para obter o resultado.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Estilos
 
-### Code Splitting
+A interface da calculadora é estilizada utilizando **Styled Components**, proporcionando uma aparência moderna com as seguintes características:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Fundo colorido**: Azul claro (#0099FF) para a calculadora.
+- **Botões responsivos**: Tamanhos adequados para fácil interação.
+- **Visor dinâmico**: Atualiza o valor conforme as operações são realizadas.
+- **Design minimalista**: Foco na simplicidade e usabilidade.
 
-### Analyzing the Bundle Size
+## Melhorias futuras
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Algumas possíveis melhorias para o projeto incluem:
 
-### Making a Progressive Web App
+- Implementação de mais operações matemáticas, como porcentagem e raiz quadrada.
+- Suporte para histórico de cálculos.
+- Implementação de teclas do teclado para controle da calculadora.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
